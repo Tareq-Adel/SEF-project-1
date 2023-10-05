@@ -1,0 +1,671 @@
+body{
+    margin:0;
+    padding: 0;
+    /* background-color: rgb(160, 160, 160); */
+    background-color: rgb(247 248 249);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header {
+    position: fixed;
+    height: 70px;
+    background-color: white;
+    width: 100%;
+    opacity: .85;
+    z-index: 100;
+}
+
+.header .logo {
+    width :200px;
+    height: 70px;
+    float: left;
+    margin-left: 100px;
+}
+
+.header .links {
+    float: right;
+    list-style: none;
+    font-size: 20px;
+    margin-right: 50px;
+    text-transform: capitalize;
+    
+}
+
+.header .links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header .links li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.619);
+}
+
+.header .links .contact-us {
+    background-color: #ffa737;
+    padding: 7.5px;
+    border-radius: 20px;
+}
+
+.header .links li a:hover {
+    font-weight: 400;
+    color: #ffa737;
+    border-bottom: 3px solid #ffa737;
+    background-color: transparent;
+
+}
+
+.home {
+    width: 100%;
+    height: 120vh;
+    background: linear-gradient(to bottom right,rgb(54 29 91)10%,#783059 ,#e77f30 120%);
+    position: relative;
+    
+
+}
+
+.home .lines {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home .home-info {
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    width: 40%;
+    color: white;
+    font-weight: 700;
+}
+
+.home .home-info h2 {
+    font-size: 48px;
+}
+
+.home .home-info p {
+    font-size: 24px;
+    line-height: 1.25;
+    word-spacing: 3px;
+    margin-bottom: 50px;
+}
+
+.home .home-info .btn {
+    padding: 12.5px;
+    border-radius: 25px;
+    margin-left: 50px;
+    font-size: large;
+    font-weight: 700;
+    color: white;
+    border: none;
+}
+
+.home .home-info .btn-1 {
+    background-color: #ffa737;
+}
+.home .home-info .btn-2 {
+    background-color: #556eed;
+}
+
+
+.home .home-desc-img {
+    position: absolute;
+    right: 50px;
+    top: 150px;
+    width: 50%;
+}
+
+.biography {
+    background-color: white;
+    text-align: center;
+    padding: 100px 20%;
+    color: rgba(0, 0, 0, 0.619);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.biography h2 {
+    color: black;
+    font-size: 36px;
+    /* font-weight: 800; */
+}
+
+.biography .hent {
+    color: black;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.biography button {
+    font-size: 24px;
+    padding: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: white;
+    background-color: #ffa737;
+    border: none;
+    border-radius: 40px;
+    margin-top: 50px;
+}
+
+.services {
+    text-align: center;
+    overflow: auto;
+    padding: 100px 0 100px;
+    
+}
+.service{
+    position: relative;
+    min-height: 300px;
+    border-radius: 5px;
+}
+
+.service:hover::after {
+    content:"";
+    position: absolute;
+    background-color: #ffa737;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    opacity: .3;
+}
+
+.services h2 {
+    color: black;
+    font-size: 38px;
+}
+
+.services .service {
+    width: calc(78%/3);
+    float: left;
+    margin-left: calc(22%/4);
+}
+
+div {
+    border-radius: 5px;
+}
+
+.services .service h3 {
+    color: black;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.services .service p {
+    color: rgba(0, 0, 0, 0.619);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.services i {
+    font-size: 50px
+}
+
+.dev-line {
+    background-color: #051643;
+    color: white;
+    text-align: center;
+    overflow: auto;
+    padding: 50px 0 ;
+}
+
+.dev-line h2 {
+    font-size: 38px;
+}
+
+/* .dev-line .desc {
+    
+} */
+
+.dev-line .goals {
+    overflow: auto;
+}
+
+.dev-line .goal {
+    width: calc(76vw/3);
+    float: left;
+    margin-left: calc(6vw - 50px);
+    background-color: #071b50;
+    padding: 30px;
+    min-height: 410px;
+}
+
+.dev-line .goal h3 {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.dev-line .desc, .dev-line .footer {
+    padding:50px 20vw;
+    font-size: 20px;
+
+}
+
+.dev-line .goal p {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.dev-line i {
+    font-size: 50px;
+    color: #ffa737;
+}
+
+.how-it-works {
+    /* background-color: #051643; */
+    /* color: white; */
+    text-align: center;
+    overflow: auto;
+    padding: 50px 0 0 ;
+}
+
+.how-it-works h2 {
+    font-size: 38px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+.how-it-works .plans {
+    overflow: auto;
+}
+
+.how-it-works .plan {
+    background-color: white;
+    width: 20vw;
+    float: left;
+    margin-left: 2vw;
+    padding: 1vw;
+    min-height: 380px;
+}
+
+.how-it-works button , .use-us button, .quality-standards button{
+    color: white;
+    font-size: 26px;
+    margin-top: 50px;
+    padding: 15px 30px;
+    background-color: #ffa737;
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.how-it-works .plan h3 {
+    font-size: 26px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.how-it-works .plan p {
+    /* display: block; */
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.619);
+}
+
+
+.desk-img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+.use-us {
+    background-color: #051643;
+    color: white;
+    text-align: center;
+    overflow: auto;
+    margin-top:-5px ;
+    padding-bottom: 100px;
+}
+
+.use-us h2 {
+    font-size: 38px;
+    margin-top: 50px;
+}
+
+
+
+.use-us .reasons {
+    overflow: auto;
+    margin: 50px 0 50px;
+}
+
+.use-us .reason {
+    width: calc(76vw/3);
+    float: left;
+    margin-left: calc(6vw - 50px);
+    background-color:white;
+    padding: 30px;
+    min-height: 250px;
+}
+
+.use-us .reason h3 {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: black;
+}
+
+.use-us .desc {
+    padding:20px 5vw;
+    font-size: 20px;
+    
+}
+
+.use-us .reason p {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.619);
+}
+
+.quality-standards {
+    color: black;
+    text-align: center;
+    overflow: auto;
+    margin-top:-5px ;
+    padding: 50px 0;
+    background-image: url(../images/quality-background.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.quality-standards::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    
+
+}
+
+
+.quality-standards h2 {
+    color: black;
+    font-size: 36px;
+
+}
+
+.quality-standards  p {
+    padding: 0 20vw;
+    display: block;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.quality-standards .footer {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 20px;
+    
+}
+
+.our-plans {
+    background-color: rgb(76, 76, 255);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.our-plans .back-image {
+    width: 120%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.1;
+}
+
+.our-plans h2 {
+    font-size: 38px;
+    margin-top: 50px;
+    color: white;
+    
+}
+
+.our-plans .hent {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: white;
+}
+
+.our-plans .online-support {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffa737;
+}
+
+.subscription-plans {
+    padding: 50px 200px;
+    overflow: auto;
+}
+
+.subscription-plans .plan {
+    float: left;
+    width: calc(calc(100vw - 450px)/3);
+    margin: 10px 5px;
+    background-color: white;
+    padding-bottom: 20px;
+    display: inline-block;
+    
+    
+}
+.subscription-plans .plan-2 {
+    padding-bottom: 40px;
+    margin: 0px 5px;
+}
+
+.subscription-plans .plan h3 {
+    font-size: 26px;
+    margin: 5px;
+    color: white;
+    background-color: #607afe;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.subscription-plans .plan-2 h3 {
+    color: #ffa737;
+}
+
+
+.subscription-plans .plan .price{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.619);
+
+}
+.subscription-plans .plan .value {
+    font-size: 48px;
+    font-weight: 900;
+    color: #556eed;
+}
+.subscription-plans .plan .specifications {
+    line-height: 3;
+}
+.subscription-plans .plan button {
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 22px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid rgba(0, 0, 0, 0.55);
+}
+
+.subscription-plans .plan-2 button {
+    color: white;
+    font-size: 22px;
+    background-color: #ffa737;
+    border-radius: 30px;
+    font-weight: 700;
+    border: none;
+}
+
+.subscription-plans .get-more-info {
+    text-decoration: none;
+    display: inline-block;
+    margin: 30px;
+    color: #e77f30;
+}
+
+.our-plans .ques {
+    color: white;
+    font-size: 26px;
+}
+
+.our-plans .domain {
+    color: #ffa737;
+    font-weight: 600;
+}
+
+.our-plans .fields {
+    color: white;
+        font-size: 26px; 
+        padding: 15px 30px;
+        background-color: #ffa737;
+        border-radius: 30px;
+        border: none;
+        font-weight: 700;
+        margin: 50px 25px;
+}
+
+.clients {
+    text-align: center;
+    padding: 50px 100px;
+    overflow: auto;
+}
+
+.clients h2 {
+    font-size: 32px ;
+    margin: 50px 0 100px;
+}
+
+.clients .feedback {
+    float: left;
+    width: 400px;
+    background-color: rgb(213, 216, 219);
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.clients .feedback img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 20px 0 0 20px;
+}
+
+.clients .feedback .feedback-content {
+    float: left;
+    width: 250px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.clients .show {
+    color: #e77f30;
+    text-decoration: none;
+}
+
+
+.try {
+background-image: url(../images/contact-us.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+overflow: hidden;
+padding: 50px 20vw;
+}
+
+.try h2 {
+    font-size: 32px;
+    margin: 200px 0 100px;
+    color: white;
+    font-weight: 800;
+}
+
+.try p {
+    font-size: 22px;
+    color: white;
+}
+.try button {
+    color: white;
+    font-size: 26px;
+    margin-top: 50px;
+    padding: 15px 30px;
+    background-color: rgb(255, 167, 55);
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+footer  {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.086);
+    margin-top: -20px;
+
+
+}
+
+footer h2 {
+    padding-top: 50px;
+}
+
+footer .footer-links {
+    
+    list-style: none;
+    overflow: auto;
+    margin-left: 20vw;
+    
+}
+footer .footer-links li {
+    float: left;
+    margin-left: 2vw;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+
+    /* margin-left: 5vw; */
+}
+
+footer .access {
+    list-style: none;
+}
+
+footer .access a {
+    text-decoration: none;
+}
+
+footer .footer-links a {
+    text-decoration: none;
+}
